@@ -1,0 +1,34 @@
+name: run
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  run-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dart-lang/setup-dart@v1.3
+
+      - name: Install dependencies
+        run: dart pub get
+
+      - name: Run
+        run: dart run lib/main.dart
+
+  run-windows:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dart-lang/setup-dart@v1.3
+
+      - name: Install dependencies
+        run: dart pub get
+
+      - name: Run
+        run: dart run lib/main.dart
