@@ -24,6 +24,10 @@ jobs:
     runs-on: windows-latest
 
     steps:
+      - name: Check LongPathsEnabled
+        run: |
+          (Get-ItemProperty "HKLM:System\CurrentControlSet\Control\FileSystem").LongPathsEnabled
+
       - uses: actions/checkout@v3
       - uses: dart-lang/setup-dart@v1.3
 
