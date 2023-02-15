@@ -22,7 +22,7 @@ jobs:
         run: dart run lib/main.dart
 
   run-windows:
-    runs-on: windows-2019
+    runs-on: windows-latest
 
     steps:
       - name: Check LongPathsEnabled
