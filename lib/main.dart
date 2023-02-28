@@ -8,9 +8,7 @@ void main() async {
   await generator.generate(
     DirectoryGeneratorTarget(Directory('out')),
     vars: <String, dynamic>{
-      'project_name': 'hello_world',
-      'org_name': 'foo.bar.baz',
-      'android': true,
+      'text': 'Hello World',
     },
   );
 }
