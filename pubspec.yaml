@@ -7,8 +7,7 @@ environment:
   sdk: ">=2.19.0 <3.0.0"
 
 dependencies:
- mason:
+  mason:
     git:
-      url: https://github.com/jtdLab/mason
-      ref: windows_path_bug
+      url: https://github.com/felangel/mason
       path: packages/mason
