@@ -9,5 +9,6 @@ environment:
 dependencies:
   mason:
     git:
-      url: https://github.com/felangel/mason
+      url: https://github.com/jtdLab/mason
       path: packages/mason
+      ref: tinker-win
